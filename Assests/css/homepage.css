@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.transbox {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.main-title {
+    color: #FFA500;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    /* Added spacing between buttons */
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.perbox {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.centered {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.expertise-section {
+    margin-top: 30px;
+}
+
+.slideshow-container {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+    /* Added padding above the dots */
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Added margin below the images */
+}
+
+.numbertext,
+.text {
+    color: #333;
+    font-size: 19px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+    margin-top: 20px;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 14px;
+    }
+}

@@ -129,6 +129,72 @@ footer a {
     margin: 0 10px;
 }
 
+.payment-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.payment-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.payment-form button {
+    background: linear-gradient(to right, #3494e6, #ec6ead);
+    border: none;
+    color: white;
+    padding: 14px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.payment-form button:hover {
+    background: linear-gradient(to right, #ec6ead, #3494e6);
+}
+
+/* Additional Styles for Card Number, Expiry Date, and CVV */
+.payment-form .card-info {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-form .card-info input {
+    flex: 1;
+}
+
+.payment-form .card-info input:nth-child(2),
+.payment-form .card-info input:nth-child(3) {
+    margin-left: 10px;
+}
+
+
 @keyframes fade {
     from {
         opacity: 0.4;
